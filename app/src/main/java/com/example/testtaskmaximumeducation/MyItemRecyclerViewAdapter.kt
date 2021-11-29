@@ -1,7 +1,6 @@
 package com.example.testtaskmaximumeducation
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -79,7 +78,6 @@ class MyItemRecyclerViewAdapter @Inject constructor(
         val newsSite: TextView = binding.itemSite
         val published: TextView = binding.itemPublished
         val image: ImageView = binding.imageView
-        val content = binding.itemContent
 
         override fun toString(): String {
             return super.toString() + " '" + this.toString() + "'"

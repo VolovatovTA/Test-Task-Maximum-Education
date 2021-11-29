@@ -2,7 +2,6 @@ package com.example.testtaskmaximumeducation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import javax.inject.Inject
 
 class MyViewModelFactory(val repository: Repository) : ViewModelProvider.Factory {
 
@@ -14,7 +13,6 @@ class MyViewModelFactory(val repository: Repository) : ViewModelProvider.Factory
                     repository = repository
                 ) as T
             }
-
             else -> throw IllegalArgumentException("Unknown ViewModel class")
         }
     }

@@ -1,7 +1,5 @@
 package com.example.testtaskmaximumeducation
 
-import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -14,9 +12,6 @@ class ViewModelArticleList @Inject constructor(val repository: Repository): View
     var isGrid = false
     var columnCount = 1
 
-    init {
-        Log.d("timofey", "ldfjvndofjn")
-    }
 
     enum class ListArticleFormState{
         DATA_LOADING, ALL_IS_GOOD, NETWORK_ERROR

@@ -12,7 +12,7 @@ import com.example.testtaskmaximumeducation.databinding.FragmentDetailsArticleBi
 import javax.inject.Inject
 import kotlin.properties.Delegates
 
-private const val ARG_PARAM1 = "position"
+private const val ARG_POSITION = "position"
 
 class DetailsArticleFragment : Fragment() {
     private var position by Delegates.notNull<Int>()
@@ -26,7 +26,7 @@ class DetailsArticleFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            position = it.getInt(ARG_PARAM1)
+            position = it.getInt(ARG_POSITION)
         }
     }
 
@@ -56,7 +56,7 @@ class DetailsArticleFragment : Fragment() {
         fun newInstance(position: Int) =
             DetailsArticleFragment().apply {
                 arguments = Bundle().apply {
-                    putInt(ARG_PARAM1, position)
+                    putInt(ARG_POSITION, position)
                 }
             }
     }

@@ -16,7 +16,7 @@ import javax.inject.Inject
 class ListArticleFragment : Fragment() {
 
     private lateinit var binding: FragmentArticleListBinding
-    private val columnCountInGrid = 3
+    private val columnCountInGrid = 2
 
     lateinit var viewModelArticleList: ViewModelArticleList
     @Inject
